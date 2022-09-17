@@ -1,8 +1,11 @@
-
-h1, h2, h3, h4, p, li, a
-{
-    font-family:"Montserrat";
+* {
     margin:0;
+}
+
+
+h1, h2, h3, h4, p, li, a, .buble
+{
+    font-family:"Poppins";
 }
 
 #title {
@@ -11,6 +14,117 @@ h1, h2, h3, h4, p, li, a
 }
 
 body {
+    background-color:rgb(237, 237, 237);
+}
+
+#logo {
+    height: auto;
+}
+
+#mini-logo {
+    width: 12vw;
+    height: auto;
+}
+
+
+/* HEADER ------------------------------------------ */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 20px;
     text-align: center;
+    background-color:rgb(255, 255, 255);
+}
+
+#left-header {
+    flex-basis: 15vw;
     font-variant-caps: all-small-caps;
+}
+
+#right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50vw;
+    margin-left: 35vw;;
+}
+
+
+.header-button {
+    font-family:"Poppins";
+    font-size: 1.1em;
+    padding: 8px;
+}
+.header-button:hover {
+    color:rgb(104, 0, 168);
+    cursor: pointer;
+}
+.header-button::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(104, 0, 168);
+    transition: transform 0.25s ease-in-out;
+    transform: scaleX(0);  
+  }
+  .header-button:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* BODY ------------------------------------------------- */
+
+#epured-text {
+    font-size: 5vw;
+    font-style: normal;
+    font-variant-caps: all-small-caps;
+}
+
+strong {
+    color:rgb(218, 58, 0);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vw;
+
+}
+
+.buble {
+    font-size: 3vw;
+    text-align: center;
+    display: relative;
+
+}
+
+
+
+/* FOOTER --------------------------------------------- */
+
+.footer {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    font-variant-caps: all-small-caps;
+    margin: 8px 40px;
+    padding: 16px;
+}
+
+#left-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 60vw;
+    
+}
+
+
+.footer-button:hover {
+    color:rgb(104, 0, 168);
+    cursor: pointer;
 }
