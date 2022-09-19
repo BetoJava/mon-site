@@ -3,7 +3,7 @@
 }
 
 
-h1, h2, h3, h4, p, li, a, .buble
+h1, h2, h3, h4, p, li, a, .buble, div
 {
     font-family:"Poppins";
 }
@@ -94,11 +94,52 @@ strong {
 
 }
 
-.buble {
-    font-size: 3vw;
-    text-align: center;
-    display: relative;
+.tricircle {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
 
+.buble {
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+
+
+
+
+.circle {
+    font-size: 1.5em;
+    border: 4px solid rgb(255, 255, 255);
+
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 37.5%;
+
+    transition: 0.3s;
+}
+
+#more-button {
+    background-color: rgb(39, 38, 45);
+    color:white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+#more-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px rgb(0, 0, 0, 0.2);
 }
 
 
