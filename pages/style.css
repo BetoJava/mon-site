@@ -1,0 +1,199 @@
+
+h1, h2, h3, h4, p, li, a
+{
+    font-family:"Montserrat";
+    color:white;
+    margin:0;
+}
+
+h2 {
+    color:rgb(170, 127, 245);
+}
+
+p, a {
+    margin-bottom: 8px;  
+}
+
+p {
+    font-size:1.2em;
+}
+
+
+li {
+    margin-bottom: 16px;
+    font-size:1.2em;
+}
+
+
+#prenom 
+{
+    font-weight: 200;
+}
+
+#nom 
+{
+    font-weight: 800;
+}
+
+#noms {
+   margin-bottom: 8%;
+   font-size: 2em;
+   transition: 0.3s;
+}
+
+
+.top
+{
+    background: linear-gradient(to right, rgba(40, 0, 108, 0.25), rgba(106, 134, 255, 0.25));
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+
+}
+
+
+#pdp
+{
+    margin: auto;
+    width: 15%;
+    height: auto;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+    flex-basis : 10%;
+    min-width: 150px;
+    
+}
+
+#resume
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: auto;
+    padding:20px;
+    border-radius: 10px;
+    flex-basis : 50%;
+    
+    
+}
+
+.rowLayout {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    
+}
+
+.info
+{
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding:8px;
+    background-color:rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+    flex-basis : auto;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255);
+    transition: 0.3s;
+    
+}
+
+.info:hover {
+    background-color:rgba(133, 131, 255, 0.2);
+    border-color: transparent;
+    transform:rotate(0.3deg);
+}
+
+
+.iconAndText {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:center;
+    margin-bottom: 8px;
+    margin-right: 16px;
+}
+
+.infoIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.mlist {
+    padding: 8px 24px;
+}
+
+.competencesIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.languesIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.grayText {
+    color:rgb(204, 204, 204);
+    font-size: 0.8em;
+    margin: 0;
+    padding-left: 26px;
+    margin-bottom: 16px;
+}
+
+.pNoMargin {
+    margin: 0;
+}
+
+
+#body {
+    display:flex;
+    flex-direction :row;
+    flex-wrap: wrap;
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    z-index: 1;
+}
+
+.leftSide {
+    background: linear-gradient(to bottom, rgba(40, 0, 108, 0.15), rgba(128, 151, 255, 0.15));
+    flex-basis : 25%;
+    padding: 16px;
+    flex-direction: row;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: left;
+    flex-basis :fit-content;
+    margin : 16px auto;
+}
+
+@media screen and (max-width: 1301px) {
+    #body {
+        flex-direction: column;
+    }
+    .rightSide {
+        margin: 0 8%;
+    }
+    .leftSide {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .top {
+        flex-direction: column;    
+    }
+    #pdp {
+        margin-left: 20px;s
+    }
+}
